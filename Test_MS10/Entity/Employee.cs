@@ -7,6 +7,7 @@ namespace Test_MS10.Entity;
 public class Employee
 {
     [Key]
+    public int Id { get; set; }
     public string Code { get; set; } = string.Empty;
     public string Name { get; set; } = string.Empty;
     public DateOnly DoB { get; set; }

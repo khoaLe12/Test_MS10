@@ -107,6 +107,7 @@ namespace Test_MS10.Controllers
             {
                 var existedEmployee = _employeeRepository
                     .Get(e => e.Code.Equals(code))
+                    .AsTracking()
                     .FirstOrDefault();
                 if (existedEmployee == null)
                 {
